@@ -7,6 +7,8 @@ interface Props {
 
 export default function UserTable({ users }: Props) {
   const navigate = useNavigate();
+  
+ 
 
   return (
     <div className="mt-6">
@@ -49,7 +51,7 @@ export default function UserTable({ users }: Props) {
           <div
             key={user.id}
             onClick={() => navigate(`/user/${user.id}`)}
-            className="p-4 bg-white rounded-2xl shadow-lg border hover:shadow-xl"
+            className="p-4 bg-white rounded-2xl shadow-lg border hover:shadow-xl cursor-pointer"
           >
             <h3 className="font-semibold text-lg text-gray-800">
               {user.name}

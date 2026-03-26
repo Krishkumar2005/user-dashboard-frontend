@@ -16,7 +16,7 @@ export default function UserDetail() {
   }, [id]);
 
   if (!user)
-    return <p className="p-6 text-center text-gray-600">Loading...</p>;
+    return <p className="p-6 text-center text-gray-600 mt-50">Loading...</p>;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100 p-4 md:p-10">
